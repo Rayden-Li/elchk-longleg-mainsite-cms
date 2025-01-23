@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
   h1,
   h2,
   h3,
@@ -82,16 +82,16 @@
     --warning: 34 51% 25%;
     --error: 10 39% 43%;
   }
-}
+} */
 
-@layer base {
+/* @layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground min-h-[100vh] flex flex-col;
   }
-}
+} */
 
 html {
   opacity: 0;
