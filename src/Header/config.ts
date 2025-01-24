@@ -10,6 +10,12 @@ export const Header: GlobalConfig = {
   },
   fields: [
     {
+      name: 'logo',
+      type: 'upload',
+      relationTo: 'media',
+      required: false,
+    },
+    {
       name: 'navItems',
       type: 'array',
       fields: [
@@ -17,12 +23,24 @@ export const Header: GlobalConfig = {
           appearances: false,
         }),
       ],
-      maxRows: 6,
+      // maxRows: 6,
       admin: {
         initCollapsed: true,
         components: {
           RowLabel: '@/Header/RowLabel#RowLabel',
         },
+      },
+    },
+    {
+      name: 'buttonItems',
+      type: 'array',
+      fields: [
+        link({
+          appearances: false,
+        }),
+      ],
+      admin: {
+        initCollapsed: true,
       },
     },
   ],
