@@ -21,6 +21,14 @@ const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
 export default buildConfig({
+  localization: {
+    locales: [
+      { label: 'English', code: 'en' },
+      { label: '中文', code: 'zh' },
+    ],
+    defaultLocale: 'zh', // Required
+    fallback: true, // Enables fallback functionality
+  },
   admin: {
     components: {
       // The `BeforeLogin` component renders a message that you see while logging into your admin panel.
