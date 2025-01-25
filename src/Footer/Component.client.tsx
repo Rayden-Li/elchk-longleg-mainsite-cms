@@ -8,7 +8,6 @@ interface FooterClientProps {
 }
 
 export const FooterClient: React.FC<FooterClientProps> = ({ data }) => {
-  console.log(data)
   const { navItems, reservedText } = data ?? {}
   const icon = data?.icon as Media
   const watermark = data?.watermark as Media
