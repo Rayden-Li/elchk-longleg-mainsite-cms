@@ -17,7 +17,7 @@ export const HeaderNav: React.FC<{ data: HeaderType }> = ({ data }) => {
 
   return (
     <div className="flex justify-between w-full">
-      {logo.url && <Image src={logo.url} width={100} height={100} alt={logo?.alt || ''} />}
+      {logo.url && <Image src={logo.url} width={150} height={150} alt={logo?.alt || ''} />}
       <nav className="flex gap-5 items-center justify-center">
         {navItems.map(({ link }, i) => {
           return (

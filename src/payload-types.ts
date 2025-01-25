@@ -1528,6 +1528,9 @@ export interface Header {
  */
 export interface Footer {
   id: string;
+  reservedText?: string | null;
+  watermark?: (string | null) | Media;
+  icon?: (string | null) | Media;
   navItems?:
     | {
         link: {
@@ -1594,6 +1597,9 @@ export interface HeaderSelect<T extends boolean = true> {
  * via the `definition` "footer_select".
  */
 export interface FooterSelect<T extends boolean = true> {
+  reservedText?: T;
+  watermark?: T;
+  icon?: T;
   navItems?:
     | T
     | {

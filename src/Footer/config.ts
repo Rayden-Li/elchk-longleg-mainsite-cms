@@ -10,6 +10,28 @@ export const Footer: GlobalConfig = {
   },
   fields: [
     {
+      name: 'reservedText',
+      type: 'text',
+      required: false,
+    },
+    {
+      type: 'row',
+      fields: [
+        {
+          name: 'watermark',
+          type: 'upload',
+          relationTo: 'media',
+          required: false,
+        },
+        {
+          name: 'icon',
+          type: 'upload',
+          relationTo: 'media',
+          required: false,
+        },
+      ],
+    },
+    {
       name: 'navItems',
       type: 'array',
       fields: [

@@ -95,6 +95,7 @@
 
 html {
   opacity: 0;
+  background: #e6f1e2;
 }
 
 html[data-theme='dark'],
