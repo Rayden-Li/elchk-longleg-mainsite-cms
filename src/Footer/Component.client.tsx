@@ -41,7 +41,7 @@ export const FooterClient: React.FC<FooterClientProps> = ({ data }) => {
         )}
       </div>
       {watermark?.url && (
-        <div className="absolute top-0 right-0">
+        <div className="absolute top-0 right-0 overflow-hidden h-full">
           <Image src={watermark?.url} width={200} height={200} alt={watermark?.alt || ''} />
         </div>
       )}
