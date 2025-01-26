@@ -95,6 +95,8 @@ export interface Page {
   desktopBanner?:
     | {
         homeDesktopBannerSlide?: (string | null) | Media;
+        bannerHeading?: string | null;
+        bannerDesc?: string | null;
         id?: string | null;
       }[]
     | null;
@@ -931,6 +933,8 @@ export interface PagesSelect<T extends boolean = true> {
     | T
     | {
         homeDesktopBannerSlide?: T;
+        bannerHeading?: T;
+        bannerDesc?: T;
         id?: T;
       };
   mobileBanner?:

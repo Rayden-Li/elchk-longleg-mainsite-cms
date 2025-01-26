@@ -64,6 +64,52 @@ export const Pages: CollectionConfig<'pages'> = {
       required: true,
     },
     {
+      type: 'row',
+      required: false,
+      fields: [
+        {
+          name: 'desktopBanner',
+          type: 'array',
+          fields: [
+            {
+              name: 'homeDesktopBannerSlide',
+              type: 'upload',
+              relationTo: 'media',
+            },
+            {
+              name: 'bannerHeading',
+              label: {
+                zh: 'Banner Heading',
+                en: 'Banner Heading',
+              },
+              type: 'text',
+              required: false,
+            },
+            {
+              name: 'bannerDesc',
+              label: {
+                zh: 'Banner Desc',
+                en: 'Banner Description',
+              },
+              type: 'text',
+              required: false,
+            },
+          ],
+        },
+        {
+          name: 'mobileBanner',
+          type: 'array',
+          fields: [
+            {
+              name: 'homeMobileBannerSlide',
+              type: 'upload',
+              relationTo: 'media',
+            },
+          ],
+        },
+      ],
+    },
+    {
       type: 'tabs',
       tabs: [
         {
