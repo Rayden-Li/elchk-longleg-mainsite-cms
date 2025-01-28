@@ -12,7 +12,7 @@ export const FooterClient: React.FC<FooterClientProps> = ({ data }) => {
   const icon = data?.icon as Media
   const watermark = data?.watermark as Media
   return (
-    <footer className="w-full h-[108px] bg-white absolute bottom-0 p-6">
+    <footer className="w-full h-[108px] bg-white absolute p-6">
       <div className="flex justify-between max-w-[1440px] mx-auto">
         <div className="flex flex-col gap-[20px]">
           <div className="flex gap-5 justify-start align-bottom">
